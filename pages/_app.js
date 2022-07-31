@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import Nav from "../components/Navigation/Nav";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <div className="flex flex-col">
+      <Nav />
+      <div className="relative">
+        <Component {...pageProps} />
+      </div>
+    </div>
+  );
 }
 
-export default MyApp
+export default MyApp;
