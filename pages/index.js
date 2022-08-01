@@ -16,7 +16,7 @@ export default function Home() {
             same
           </h2>
           <button
-            className="mt-4 bg-black text-white rounded p-4 font-bold animate-bounce"
+            className="mt-4 bg-black text-white rounded p-4 font-bold"
             onClick={() => router.push("/about")}
           >
             <span>Learn More</span>
